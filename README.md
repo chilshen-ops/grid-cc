@@ -131,11 +131,9 @@ python main.py 000001 \
 网格数量: 12
 ```
 
-### 生成的图表
-- `charts/000001_dashboard.html`：综合仪表板
-- `charts/000001_comparison.html`：策略对比图
-
-### 分析报告
+### 生成的图表 分析报告
+- `reports/000001_dashboard.html`：综合仪表板
+- `reports/000001_comparison.html`：策略对比图
 - `reports/000001_report.html`：详细分析报告
 
 ## 高级用法
