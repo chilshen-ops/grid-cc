@@ -47,7 +47,7 @@ class DataSource:
 class ZhituDataSource(DataSource):
     """智图API数据源实现"""
     
-    def __init__(self, token: str = "EE0A2448-BBA7-4B9F-87EC-4876BB208ED1"):
+    def __init__(self, token: str = "你的api 去zhituapi.com免费领取"):
         super().__init__()
         self.token = token
         self.base_url = "https://api.zhituapi.com/hs/history"
