@@ -75,8 +75,6 @@ python main.py 000001 \
 程序运行后会生成以下目录和文件：
 
 - `data_cache/`：股票数据缓存
-- `results/`：优化结果JSON文件
-- `charts/`：交互式HTML图表
 - `reports/`：分析报告HTML文件
 
 ## 核心模块说明
