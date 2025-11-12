@@ -318,7 +318,10 @@ class GridStrategyCalculator:
         
         # 夏普比率
         daily_returns = daily_df['return'].dropna()
-        sharpe_ratio = daily_returns.mean() / daily_returns.std() * np.sqrt(252) if len(daily_returns) > 1 else 0
+        if len(daily_returns) > 1 and daily_returns.std() != 0:
+            sharpe_ratio = daily_returns.mean() / daily_returns.std() * np.sqrt(252)
+        else:
+            sharpe_ratio = 0
         
         # 交易统计
         buy_trades = len([t for t in trade_records if t.direction == TradeDirection.BUY])
